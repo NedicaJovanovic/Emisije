@@ -1,0 +1,26 @@
+SELECT Naziv,Tip, Datum
+FROM Program
+WHERE idV is NULL
+
+
+
+SELECT Naziv                             Naziv 
+FROM Program                          1 Visoki napon
+WHERE Tip='Kviz' AND Gledanost<20           
+ 
+
+SELECT Naziv                            Naziv
+FROM Program p, Voditelj v          1  Lavirint
+WHERE v.idV= 3 and v.idV=p.idV      2 Visoki napon
+ 
+
+SELECT Naziv,Tip,Od                  Naziv  Tip  Od
+FROM Program                     1  Munje  Film  2000
+WHERE Tip='Film' AND Od >1530
+
+
+SELECT Od,Gledanost              Od  Gledanost
+FROM Program                 1   1600 10
+WHERE Od >=1600              2   2000 42
+                             3   2100 22
+                             4   2045 17
